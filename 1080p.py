@@ -18,15 +18,8 @@ bpy.context.scene.render.antialiasing_samples = '16'
 bpy.context.scene.render.image_settings.file_format = 'H264'
 bpy.types.ImageFormatSettings.file_format = 'H264'
 
-is_ntsc = (bpy.context.scene.render.fps != 25)
-
 bpy.context.scene.render.ffmpeg.format = "H264"
 bpy.context.scene.render.ffmpeg.codec = "H264"
-
-if is_ntsc:
-    bpy.context.scene.render.ffmpeg.gopsize = 18
-else:
-    bpy.context.scene.render.ffmpeg.gopsize = 15
 
 bpy.context.scene.render.ffmpeg.video_bitrate = 32000
 bpy.context.scene.render.ffmpeg.maxrate = 9000
