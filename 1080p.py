@@ -3,6 +3,12 @@ import bpy
 # 1080p preset
 bpy.context.scene.render.display_mode = 'NONE'
 bpy.ops.script.python_file_run(filepath="/usr/share/blender/scripts/presets/render/HDTV_1080p.py")
+
+# Adjust frame rate accordingly
+# 24 fps with base 1.001 = 23.98 fps
+bpy.context.scene.render.fps = 24
+bpy.context.scene.render.fps_base = 1.001
+
 bpy.context.scene.render.antialiasing_samples = '16'
 bpy.context.scene.render.image_settings.file_format = 'H264'
 bpy.types.ImageFormatSettings.file_format = 'H264'

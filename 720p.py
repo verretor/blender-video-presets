@@ -3,6 +3,11 @@ import bpy
 # 720p preset
 bpy.context.scene.render.display_mode = 'NONE'
 bpy.ops.script.python_file_run(filepath="/usr/share/blender/scripts/presets/render/HDTV_720p.py")
+
+# Adjust frame rate accordingly
+bpy.context.scene.render.fps = 30
+bpy.context.scene.render.fps_base = 1.000
+
 bpy.context.scene.render.antialiasing_samples = '16'
 bpy.context.scene.render.image_settings.file_format = 'H264'
 bpy.types.ImageFormatSettings.file_format = 'H264'
