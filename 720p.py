@@ -10,7 +10,8 @@ bpy.context.scene.render.pixel_aspect_y = 1
 # Adjust frame rate accordingly
 # fps 30 with base 1.001 = 29.97 fps.
 bpy.context.scene.render.fps = 30
-bpy.context.scene.render.fps_base = 1.000
+bpy.context.scene.render.fps_base = 1.001
+#bpy.context.scene.render.fps_base = 1.000
 
 bpy.context.scene.render.antialiasing_samples = '16'
 bpy.context.scene.render.image_settings.file_format = 'H264'
