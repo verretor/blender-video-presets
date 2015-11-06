@@ -5,6 +5,7 @@ bpy.context.scene.render.display_mode = 'NONE'
 bpy.ops.script.python_file_run(filepath="/usr/share/blender/scripts/presets/render/HDTV_720p.py")
 
 # Adjust frame rate accordingly
+# fps 30 with base 1.001 = 29.97 fps.
 bpy.context.scene.render.fps = 30
 bpy.context.scene.render.fps_base = 1.000
 
